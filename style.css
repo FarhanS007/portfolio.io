@@ -122,6 +122,12 @@ ul {
   flex: 1;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 /* ============ nav end ============== */
 
 
