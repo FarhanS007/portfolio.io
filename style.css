@@ -111,6 +111,17 @@ ul {
   width: 100%;
 
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  flex: 1;
+  text-align: center;
+}
 /* ============ nav end ============== */
 
 
@@ -169,6 +180,12 @@ ul {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*skills*/
@@ -296,6 +313,7 @@ ul {
   z-index: 2;
 }
 
+
 /*=======skills end ===========*/
 
 /*about me*/
@@ -327,8 +345,7 @@ ul {
 .text-aboutme{
   width: 570px;
   text-align: center;
-  margin-top: 60px;
-  margin-left: 25rem;
+  margin: 60px auto;
   text-align: justify;
   animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; 
 }
@@ -344,6 +361,14 @@ ul {
 .text-aboutme p{
   margin: 50px 0;
   font-size: 18px;
+}
+
+@media screen and (max-width: 824px) {
+  .text-aboutme {
+    width: 90%;
+    max-width: none;
+    margin: 20px auto;
+  }
 }
 /*======about me=======*/
 
